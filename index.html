@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/queries.css" />
+    <title>De Kade</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <h3>De Kade</h3>
+        </div>
+        <ul class="navul closed">
+          <li class="navlink scroll" data-scrollto="about-section">about us</li>
+          <li class="navlink scroll" data-scrollto="menu-section">menu</li>
+          <li class="navlink scroll" data-scrollto="review-section">
+            reviews
+          </li>
+          <li class="navlink scroll" data-scrollto="footer">contact</li>
+          <!-- <li class="navlink">
+            <span class="nl">NL</span>/<span class="en">EN</span>
+          </li> -->
+        </ul>
+        <ion-icon name="menu" class="hamburger"></ion-icon>
+      </nav>
+    </header>
+    <section class="about-section">
+      <div>
+        <h3>About us</h3>
+        <div class="text-container">
+          <div>
+            <p>
+              Coffeeshop De Kade has been around for over 30 years. The shop has
+              a very homely environment and is based in the south of Amsterdam,
+              only a two minute walk from the Olympic Stadium.
+              <span class="emphasize-pink see-route">See route</span>
+            </p>
+            <p>
+              Due to the constant quality of the products and the relaxed
+              atmosphere, this shop attracts a wide variety of guests. The
+              comprehensive
+              <span class="emphasize-pink menu">menu</span> has a solid base for
+              the every day smoker but also a variety of different temporary
+              exclusive strains.
+            </p>
+          </div>
+          <div>
+            <p>
+              De Kade is also known for the friendly staff that is always there
+              to help you pick the product that suits you best! So after a nice
+              day take your time to retreat from the chaos of everyday life.
+              Take a moment to relax and enjoy our hidden gem. And don't forget
+              to challenge someone for some table soccer!
+            </p>
+            <div class="about-follow-us">
+              <p>Follow us on our social media</p>
+              <div class="linkcontainer">
+                <a href="#" class="facebook">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  <p>Facebook</p>
+                </a>
+                <a href="#" class="instagram">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <p>Instagram</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slideshow">
+        <ion-icon name="ios-arrow-back" class="back"></ion-icon>
+        <ion-icon name="ios-arrow-forward" class="forward"></ion-icon>
+        <div class="buttons">
+          <div class="slideshowtracker" data-index="0"></div>
+          <div class="slideshowtracker" data-index="1"></div>
+        </div>
+      </div>
+    </section>
+    <section class="menu-section">
+      <h3>Menu</h3>
+      <div class="menucard">
+        <figure class="bigscreenmenu">
+          <img src="./media/menu.jpg" alt="menu" />
+        </figure>
+        <div class="smallscreenmenu">
+          <figure>
+            <img src="./media/menu.jpg" alt="menu" />
+          </figure>
+          <figure>
+            <img src="./media/menu.jpg" alt="menu" />
+          </figure>
+          <figure>
+            <img src="./media/menu.jpg" alt="menu" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="review-section">
+      <h3>Reviews</h3>
+      <div class="reviewscontainer">
+        <div class="review">
+          <div class="imgname">
+            <ion-icon name="person"></ion-icon>
+            <div class="headerinfo">
+              <h5>Marcel Holt</h5>
+              <p>1 year ago</p>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              Location is awesome. Staff is friendly, and one staff member is
+              exceptionally awesome. I'm talking about the cat, love that
+              guy/girl. There's a lot of space to chill while smoking inside
+              with comfortable couches, a pinball machine and table top
+              football. The weed they sell is well priced, and they sell a lot
+              of weird strains. They also serve coffee and some food. Overall
+              very good environment and atmosphere
+            </p>
+          </div>
+        </div>
+        <div class="review">
+          <div class="imgname">
+            <ion-icon name="person"></ion-icon>
+            <div class="headerinfo">
+              <h5>The Inside</h5>
+              <p>1 year ago</p>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              Currently the best CS in Amsterdam. I say that as a local who
+              reviews weed for my website, rather than this being a throwaway
+              piece of praise. The best weed at a third less than you pay in
+              central. Best decor you'll see, too. Not to mention the cat!
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        href="https://www.google.com/maps/place/Coffeeshop+%22De+Kade%22/@52.3435251,4.862202,17z/data=!4m10!1m2!2m1!1sde+kade+amsterdam!3m6!1s0x47c60a008471dc15:0x8475b6ebb5780009!8m2!3d52.3435251!4d4.8643907!9m1!1b1"
+        >view more reviews</a
+      >
+    </section>
+    <section class="maps-section"></section>
+    <footer class="footer">
+      <h3>Contact</h3>
+      <div class="footercontainer">
+        <ul>
+          <li>
+            <h5>Location</h5>
+            <p>Stadionkade 107,</p>
+            <p>1076 BN Amsterdam</p>
+          </li>
+          <li>
+            <h5>Phone</h5>
+            <p class="emphasize-pink">+31 (0) 206738102</p>
+          </li>
+          <li>
+            <h5>Mail</h5>
+            <a href="mailto:info@coffeeshopdekade.nl">
+              <p class="emphasize-pink">info@coffeeshopdekade.nl</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h5>Opening times</h5>
+            <p>Monday-Sunday:</p>
+            <p>Open from 10:00 - 23:00</p>
+          </li>
+          <li>
+            <h5>Parking</h5>
+            <p>Parking-spaces are available</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h5>Public transport</h5>
+            <p>Accessible by public transport</p>
+            <p>Bus stop near Olympic stadium</p>
+          </li>
+          <li>
+            <h5>Social media</h5>
+            <div>
+              <a href="#">
+                <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-instagram" class="instagram"></ion-icon>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footerbar"><h2>De Kade</h2></div>
+    </footer>
+    <div class="backtotop"><ion-icon name="ios-arrow-up"></ion-icon></div>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

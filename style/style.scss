@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://use.typekit.net/ytk4lns.css");
+@font-face {
+  src: url("../fonts/Dyer\ Arts\ and\ Crafts.ttf");
+  font-family: "Dyer";
+}
+// reusables
+//
+.emphasize-pink {
+  color: #bf97a1;
+  text-decoration: underline;
+  font-weight: 500;
+}
+//
+//
+body {
+  font-family: futura, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: #444;
+}
+.overlay {
+  opacity: 0;
+  display: none;
+  position: fixed;
+  background: #27352a;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: opacity 0.3s;
+  &.showoverlay {
+    opacity: 0.6;
+  }
+}
+header {
+  nav {
+    padding: 20px 100px;
+    transition: position 0.5s, color 0.5s, background 0.5s;
+    &.stick {
+      background: #27352a;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 900;
+      h3 {
+        display: inline-block;
+        font-size: 3em;
+        cursor: pointer;
+      }
+      ul {
+        .navlink {
+          color: #bf97a1;
+          transition: border 0.3s;
+          &:hover {
+            border-bottom: 2px solid #bf97a1;
+          }
+        }
+      }
+    }
+    // background: #27352a;
+    .hamburger {
+      display: none;
+    }
+    .logo-container {
+      display: inline-block;
+    }
+    h3 {
+      font-family: "Dyer";
+      color: #bf97a1;
+      display: none;
+      cursor: pointer;
+    }
+    ul {
+      float: right;
+      .navlink {
+        display: inline-block;
+        text-transform: uppercase;
+        color: #222;
+        font-weight: 300;
+        margin-right: 20px;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        .nl {
+          font-weight: 400;
+          padding-right: 5px;
+        }
+        .en {
+          padding-left: 5px;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  // h1 {
+  //   font-family: "Dyer";
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   color: rgb(255, 185, 56);
+  //   font-size: 7em;
+  // }
+  height: 100vh;
+  background: url("../media/header_bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.about-section {
+  padding: 70px 0;
+  z-index: 10;
+  .slideshow {
+    margin-top: 50px;
+    height: 600px;
+    transition: background 0.5s;
+    background: url("../media/planten_bg.jpg");
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    .buttons {
+      position: absolute;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      bottom: 20px;
+      height: 20px;
+      width: 40px;
+      grid-gap: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      .slideshowtracker {
+        height: 16.5px;
+        border: 1px solid #bf97a1;
+        border-radius: 50px;
+        transition: background 0.3s;
+        display: inline-block;
+        cursor: pointer;
+        &:hover {
+          background: #bf97a1;
+        }
+        &.active {
+          background: #bf97a1;
+        }
+      }
+    }
+    ion-icon {
+      font-size: 3em;
+      background: #fefefe;
+      color: #bf97a1;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+      margin-top: 250px;
+      border-radius: 50px;
+      &:hover {
+        opacity: 1;
+      }
+      &.forward {
+        float: right;
+        margin-right: 10px;
+      }
+      &.back {
+        float: left;
+        margin-left: 10px;
+      }
+    }
+  }
+  h3 {
+    padding: 15px;
+    text-align: center;
+    color: #27352a;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+  p {
+    font-weight: 500;
+  }
+  .text-container {
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    > div {
+      p {
+        margin-bottom: 15px;
+      }
+    }
+    .about-follow-us {
+      padding: 20px 0;
+      p {
+        margin-bottom: 1px;
+        font-weight: 800;
+        text-decoration: underline;
+      }
+      .linkcontainer {
+        padding-top: 50px;
+        padding-right: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        a {
+          text-decoration: none;
+        }
+        p,
+        ion-icon {
+          display: inline-block;
+          color: #fff;
+          transition: background 0.3s;
+        }
+        .facebook {
+          width: 100px;
+          display: grid;
+          grid-template-columns: 1fr 4fr;
+          ion-icon {
+            font-size: 2em;
+            padding: 10px;
+            background: #249acb;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+          }
+          p {
+            padding: 15px;
+            background: #29abe2;
+            text-decoration: none;
+            font-size: 1.05em;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+          p:hover {
+            background: #249acb;
+          }
+        }
+        .instagram {
+          width: 100px;
+          display: grid;
+          grid-template-columns: 1fr 4fr;
+          ion-icon {
+            font-size: 2em;
+            padding: 10px;
+            background: #bf97a1;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+          }
+          p {
+            padding: 15px;
+            background: #e0a4c2;
+            text-decoration: none;
+            font-size: 1.05em;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+          p:hover {
+            background: #bf97a1;
+          }
+        }
+      }
+    }
+  }
+}
+// #e0a4c2 bright pink #ca93ae darker pink
+//#29abe2 light blue #249acb darker blue
+.menu-section {
+  background-image: url("../media/planten_bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 100px;
+  h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 100;
+    padding: 50px;
+    text-shadow: 1px 1px 5px #555;
+  }
+  .menucard {
+    width: 80%;
+    margin-left: 10%;
+    .bigscreenmenu {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .smallscreenmenu {
+      display: none;
+    }
+  }
+}
+.review-section {
+  width: 100%;
+  min-height: 80vh;
+  padding-bottom: 100px;
+  a {
+    color: #fff;
+    padding: 10px;
+    width: 160px;
+    border-radius: 4px;
+    background: #bf97a1;
+    transition: background 0.3s;
+    text-decoration: none;
+    margin-top: 150px;
+    margin-left: 50%;
+    &:hover {
+      background: #9c7b83;
+    }
+  }
+  h3 {
+    text-align: center;
+    padding: 100px 0 50px 0;
+    font-size: 2.5em;
+  }
+  .reviewscontainer {
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 50px;
+    .review {
+      margin-bottom: 50px;
+      width: 60%;
+      margin-left: 20%;
+      .imgname {
+        ion-icon,
+        .headerinfo {
+          display: inline-block;
+        }
+        ion-icon {
+          font-size: 2em;
+          color: #bf97a1;
+          margin-right: 10px;
+        }
+        .headerinfo {
+          h5 {
+            color: #bf97a1;
+          }
+          p {
+            color: #777;
+          }
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+.maps-section {
+  width: 100%;
+  background: url("../media/maps.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+footer {
+  h3 {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2.5em;
+    color: #27352a;
+  }
+  .footercontainer {
+    padding-bottom: 100px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 100px;
+    ul {
+      list-style: none;
+      li {
+        padding-bottom: 15px;
+        a {
+          text-decoration: none;
+        }
+        h5 {
+          font-weight: 600;
+          text-decoration: underline;
+          font-size: 1.3em;
+        }
+        p {
+          font-size: 1.3em;
+          text-decoration: none;
+          font-weight: 200;
+        }
+        div {
+          padding-top: 10px;
+          display: grid;
+          width: 100px;
+          grid-template-columns: 30px 30px;
+          grid-gap: 20px;
+          ion-icon {
+            font-size: 2em;
+            background: #bf97a1;
+            color: #fff;
+            border-radius: 4px;
+            padding: 5px;
+            transition: background 0.3s;
+            &.instagram {
+              background: #bf97a1;
+            }
+            &.instagram:hover {
+              background: #a17f88;
+            }
+            &.facebook {
+              background: #29abe2;
+            }
+            &.facebook:hover {
+              background: #249acb;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footerbar {
+    background: #27352a;
+    padding: 10px;
+    h2 {
+      font-size: 3em;
+      padding-left: 100px;
+      font-family: "Dyer";
+      color: #bf97a1;
+    }
+  }
+}
+.backtotop {
+  opacity: 0;
+  transition: opacity 0.3s;
+  &.showbacktotop {
+    opacity: 0.6;
+  }
+  position: fixed;
+  font-size: 3em;
+  top: 90%;
+  right: 20px;
+  background: #27352a;
+  color: #bf97a1;
+  line-height: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}

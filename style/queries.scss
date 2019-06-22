@@ -1,0 +1,116 @@
+@media screen and (max-width: 940px) {
+  header {
+    nav {
+      padding: 20px 30px;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .about-section {
+    .text-container {
+      .about-follow-us {
+        .linkcontainer {
+          grid-template-columns: 1fr;
+          grid-row-gap: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 815px) {
+  header {
+    nav {
+      padding: 20px 30px;
+      background: #27352a;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 900;
+      .hamburger {
+        display: block;
+        float: right;
+        color: #bf97a1;
+        font-size: 2.5em;
+        cursor: pointer;
+      }
+      h3 {
+        display: inline-block;
+        font-size: 2.5em;
+      }
+
+      ul {
+        z-index: 300;
+        height: 180px;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        background: #27352a;
+        transition: height 0.3s;
+        &.closed {
+          height: 0;
+        }
+        .navlink {
+          display: block;
+          width: 100%;
+          text-align: center;
+          background: #27352a;
+          color: #bf97a1;
+          border: none;
+        }
+      }
+    }
+  }
+  .about-section {
+    padding-bottom: 170px;
+    .slideshow {
+      height: 300px;
+      width: 100%;
+      margin-left: 0;
+      ion-icon {
+        opacity: 1;
+        background: transparent;
+      }
+    }
+    .text-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .menu-section {
+    min-height: 100vh;
+    .bigscreenmenu {
+      display: none;
+    }
+    .smallscreenmenu {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  .review-section {
+    .reviewscontainer {
+      .review {
+        width: 100%;
+        margin-left: 0%;
+      }
+    }
+    a {
+      margin-left: 10%;
+    }
+  }
+  .maps-section {
+    height: 100vh;
+  }
+  footer {
+    .footercontainer {
+      grid-template-columns: 1fr;
+      margin-left: 40px;
+    }
+    .footerbar {
+      h2 {
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+  }
+}
